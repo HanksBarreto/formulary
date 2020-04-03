@@ -74,17 +74,17 @@ const cliente = new clienteRadius(codigo, nombre, direccion, fecha, correo,  mar
     //instanciando Metodos
     ui.addCliente(cliente);
     ui.resetForm();
-    ui.showMessage('alemento creado satifatoriamente','success');
+  //  ui.showMessage('alemento creado satifatoriamente','success');
     e.preventDefault();
 })
 
-/*document.getElementById('list-client')
+document.getElementById('list-client')
 .addEventListener('click', function (e) {
     const ui = new GUI();
     ui.deleteCliente(e.target);
    
     
-})*/
+})
 
 
 
