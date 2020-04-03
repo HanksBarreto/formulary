@@ -1,9 +1,17 @@
+.navbar{
+    .navbar-brand{
+        border-bottom: 4px double rgb(252, 252, 252);
+        border-radius: 3px;
+    }
+    .navbar-nav{
+        ul{
+        li{
+            display:inline-flex;
+        }
+        }
+    }
+}
 
-header{
-.h2{
-    border-bottom: 4px double rgb(201, 228, 236);
-}
-}
 .table{
     .card-body{
         .td{

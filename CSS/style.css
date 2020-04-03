@@ -1,5 +1,8 @@
-header .h2 {
-  border-bottom: 4px double #c9e4ec; }
+.navbar .navbar-brand {
+  border-bottom: 4px double #fcfcfc;
+  border-radius: 3px; }
+.navbar .navbar-nav ul li {
+  display: inline-flex; }
 
 .table .card-body .td {
   font-size: 14px;
