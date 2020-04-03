@@ -78,13 +78,13 @@ const cliente = new clienteRadius(codigo, nombre, direccion, fecha, correo,  mar
     e.preventDefault();
 })
 
-document.getElementById('list-client')
+/*document.getElementById('list-client')
 .addEventListener('click', function (e) {
     const ui = new GUI();
     ui.deleteCliente(e.target);
    
     
-})
+})*/
 
 
 
