@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <title>Formulario</title>
+</head>
+<body >
+  <div class="container">
+    <div class="row">
+      <div class="col-ms-12">
+        <header>
+          <p class="h2 text-primary text-left ">App JirethSoport</p>
+        </header>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-ms-12 col-md-6 col-mx-6 col-lg-4">
+        <form action="" name="formulario" id="form-cliente"  class="form-ground m-3 d-block rounded border   p-4 shadow-lg mb-3" method="GET" > 
+        
+            <h3 class="text-info text-center ">CLIENTE Y RADIUS</h3>
+            <input type="text" name="codigo" id="codigo" maxlength="20" class="form-control mb-2" placeholder=" codigo"  required>
+            <input type="text" name="Nombre" placeholder=" Nombres" id="nombre" class="form-control mb-2" required>
+            <input type="text" name="direccion" placeholder="direccion" id="direccion" class="form-control mb-2" required>
+            <input type="date" name="fecha" id="fecha" placeholder="Fecha de instalacion" class="form-control mb-2 " required>
+            <input type="email" name="email" placeholder="nombre@mail.pe" id="correo" class="form-control mb-2" required>
+                      <p class="text-info display h5">Datos del Radius</p>
+            <input type="text" name="marca" id="marca" maxlength="20" class="form-control mb-2" placeholder=" Marca" required>
+            <input type="text" name="ip" placeholder="0.0.0.0" id="ip" class="form-control mb-2"  required> 
+            <input type="text" name="megas" placeholder=" Megas" id="megas" class="form-control  mb-2" required>
+                      <label for="" class="text-secondary text-center">Operativo :</label>
+            <span class="text-danger"> SI</span>
+            <input type="checkbox" name="SI" class="m-2 checkbox" id="check1" checked> 
+            <span class="text-danger text-center ">NO</span>
+            <input type="checkbox" name="no" class="m-2 checkbox" id="check2"><br>
+            <input type="submit" name="botton" id="btn" class="btn btn-dark form-control text-info  " value="Enviar"   >
+      
+        </form>
+        </div>
+        
+          
+            <div class="col-ms-12 col-md-6 col-mx-6 col-lg-8 ">
+              <div class="table-responsive">
+              <table class="table table-hover mt-4">
+                <thead class="list-clientes">
+                  <tr>
+                    <th scope="col" class="text-danger">#</th>
+                    <th scope="col" class="text-info">Nombres</th>
+                    <th scope="col" class="text-info">Direccion</th>
+                    <th scope="col" class="text-info">Fecha</th>
+                    <th scope="col" class="text-info text-center" >Correo</th>
+                    <th scope="col" class="text-info">Marca</th>
+                    <th scope="col" class="text-info text-center">IP</th>
+                    <th scope="col" class="text-info">Megas</th>
+                    <th scope="col" class="text-info text-center">Action</th>
+
+                  </tr>
+                  </thead>
+                  <tbody class="card-body" id="list-client">
+                   
+                  </tbody>
+                
+
+              </table>  
+              </div>
+                      
+            </div>
+            </div>
+        </div>
+      </div>
+      </div>
+       
+       
+
+        
+        
+        
+       
+
+
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> 
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                       
+            <script src="JS/two.js"></script>
+            <script src="JS/script.js"></script>
+</body>
+</html>
