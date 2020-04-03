@@ -21,13 +21,13 @@ class GUI{
         const element = document.createElement('tr');
         element.innerHTML = `
                  <td scope="row" class="text-danger">${cliente.codigo}</td>   
-                 <td scope="row" class="th">${cliente.nombre}</td>  
-                 <td scope="row" class="th">${cliente.direccion}</td>  
-                 <td scope="row" class="th">${cliente.fecha}</td>   
-                 <td scope="row" class="th">${cliente.correo}  </td> 
-                 <td scope="row" class="th">${cliente.marca}</td> 
-                 <td scope="row" class="th">${cliente.ip}</td>   
-                 <td scope="row" class="th  text-info">${cliente.megas} </td>  
+                 <td scope="row" class="td">${cliente.nombre}</td>  
+                 <td scope="row" class="td">${cliente.direccion}</td>  
+                 <td scope="row" class="td">${cliente.fecha}</td>   
+                 <td scope="row" class="td">${cliente.correo}  </td> 
+                 <td scope="row" class="td">${cliente.marca}</td> 
+                 <td scope="row" class="td">${cliente.ip}</td>   
+                 <td scope="row" class="td megas text-info">${cliente.megas} </td>  
                <td> <a href="#" class="btn btn-danger text-light" name="delete">Eliminar</a> </td>
         `;
         listClient.appendChild(element);

@@ -1,8 +1,17 @@
-.table .card-body .th {
+header .h2 {
+  border-bottom: 6px double ; 
+  border-bottom-color: rgb(80, 78, 78);
+  border-radius: 5px;
+ 
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.table .card-body .td {
   font-size: 14px;
   cursor: pointer; }
-
-.h2 {
-  border-bottom: 4px double #c9e4ec; }
+.table .card-body .megas {
+  font-size: 15px;
+  font-style: oblique; }
 
 /*# sourceMappingURL=style.css.map */
