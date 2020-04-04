@@ -1,13 +1,12 @@
 .navbar .navbar-nav .nav-item {
   margin-left: 10px; }
-.navbar .nav-item .nav-link:active {
+.navbar .nav-item .nav-link:focus {
   background: transparent;
-  border-bottom: 3px double #0eca82;
-  border-radius: 2px;
-  color: white; }
+  border-bottom: 3px double #08a598;
+  border-radius: 3px; }
 .navbar .navbar-brand {
-  border-bottom: 4px double white;
-  border-radius: 2px;
+  border-bottom: 3px double white;
+  border-radius: 1px;
   text-shadow: 1px 2px 4px; }
 .navbar .navbar-brand:hover {
   border-bottom: 4px double #1ab8f7;
