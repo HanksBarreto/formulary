@@ -58,8 +58,7 @@ class GUI{
     
 
 /*----- Caturando todos los elementos ---- */
-document.getElementById('form-cliente')
-.addEventListener('submit', function (e) {
+document.getElementById('form-cliente').addEventListener('submit', function (e) {
 const codigo = document.getElementById('codigo').value;
 const nombre = document.getElementById('nombre').value;
 const direccion = document.getElementById('direccion').value;
