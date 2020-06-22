@@ -4,52 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Library Bootstarp-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
-    
+    <!--font Awesome-->
+    <script src="https://use.fontawesome.com/de6f1bbee7.js"></script>
     <title>Formulario</title>
 </head>
 <body >
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-    <a class="navbar-brand text-danger" href="#">AppFeijoo</a>
-    
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item active ">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Agregar</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Averias</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-info" href="#">AppFeijoo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light p-2" href="#"><i class="fa fa-home text-info "></i>Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-light p-2" href="#"><i class="fa fa-bell text-info "></i>Averias</a>
+        </li>
+     
+      </ul>
+    </div>
   </nav>
   
   <div class="container-fluid">
     <!-- Example row of columns -->
     <div class="row">
-      <div class="col-ms-12 col-md-6 col-mx-6 col-lg-4">
+      <div class="col-ms-12 col-md-6 col-mx-6 col-lg-4 ">
         <form action="" name="formulario" id="form-cliente"  class="form-ground m-3 d-block rounded border   p-4 shadow-lg mb-3" method="GET" > 
-        
-            <h3 class="text-info text-center ">CLIENTE Y RADIUS</h3>
-            <input type="text" name="codigo" placeholder=" Codigo" id="codigo" maxlength="20"  class="form-control mb-2 "   required>
+            <p class="h4 text-dark text-center">Cliente y Plan de Internet</p>
+            <p class="text-info h5  "><i class="fa fa-user p-2"></i>Datos del Cliente</p>
+            <input type="text" name="codigo" value="1070" id="codigo" maxlength="20"  class="form-control mb-2 " required>
             <input type="text" name="nombre" placeholder=" Nombres" id="nombre" class="form-control mb-2" required>
             <input type="text" name="direccion" placeholder="Direccion" id="direccion" class="form-control mb-2" required>
-            <input type="date" name="fecha" id="fecha" placeholder ="Fecha de instalacion" class="form-control mb-2 " required>
             <input type="email" name="email" placeholder="nombre@mail.pe" id="correo" class="form-control mb-2" required>
-                <p class="text-dark display h5">Datos del radius :</p>
+                <p class="text-info h5"><i class="fa fa-wifi p-2"></i>Plan de Internet </p>
             <input type="text" name="marca" placeholder=" Marca" id="marca" maxlength="20" class="form-control mb-2"  required>
-            <input type="text" name="ip" placeholder="0.0.0.0" id="ip" class="form-control mb-2"  required> 
             <input type="text" name="megas" placeholder=" Megas" id="megas" class="form-control  mb-2" required>
-                <label for="" class="text-secondary text-center">Operativo :</label>
-            <span class="text-danger"> SI</span>
-            <input type="checkbox" name="SI" class="m-2 checkbox" id="check1" checked> 
-            <span class="text-danger text-center ">NO</span>
-            <input type="checkbox" name="no" class="m-2 checkbox" id="check2"><br>
-            <input type="submit" name="botton" id="btn" class="btn btn-dark form-control text-info  " value="Enviar"   >
+           <input type="date" name="facturacion" placeholder="" id="facturacion" class="form-control mb-2"  required> 
+           <input type="number" name="price" value="40" id="precio" placeholder="S/." class="form-control mb-2"  required>     
+           <input type="submit" name="botton" id="btn" class="btn btn-dark form-control text-light" value="Enviar"   >
       
         </form>
         </div>
@@ -63,12 +60,12 @@
                     <th scope="col" class="text-danger">#</th>
                     <th scope="col" class="text-info">Nombres</th>
                     <th scope="col" class="text-info">Direccion</th>
-                    <th scope="col" class="text-info">Fecha</th>
                     <th scope="col" class="text-info text-center" >Correo</th>
                     <th scope="col" class="text-info">Marca</th>
-                    <th scope="col" class="text-info text-center">IP</th>
                     <th scope="col" class="text-info">Megas</th>
-                    <th scope="col" class="text-info text-center">Action</th>
+                    <th scope="col" class="text-info text-center" >FechaFactur</th>
+                    <th scope="col" class="text-info text-center" >S/.</th>
+                    <th scope="col" class="text-danger text-center">Action</th>
 
                   </tr>
                   </thead>
